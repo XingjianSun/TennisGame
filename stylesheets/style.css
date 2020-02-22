@@ -1,0 +1,14 @@
+tennisGame {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+set {
+  width: 25%;
+}
+game {
+  width: 50%;
+}
+point {
+  width: 25%;
+}

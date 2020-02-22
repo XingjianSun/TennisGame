@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Xingjian Sun">
+    <title>Tennis Game</title>  
+    <!-- <link rel="stylesheet" href="stylesheets/style.css"> -->
+    <style>
+      body {
+        background-color: linen;
+      } 
+/* 
+      div{
+        display: inline-block;  
+      } */
+
+      #tennisGame {
+        height: 100%;
+        width: 100%;
+        display: flex;
+      }
+      #set {
+        width: 25%;
+        display: inline-block; 
+      }
+      #game {
+        width: 50%;
+        display: inline-block; 
+      }
+      #point {
+        width: 25%;
+        display: inline-block; 
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <h1>Tennis Game</h1>
+
+    <div id = "tennisGame">
+      <div id="set">
+
+        <div  id="setDisplay">
+          <div style="display: inline-block"><h3>Set: </h3></div>
+          <div style="display: inline-block"><p class="number" id="setNum"> 1 </p></div>
+        </div>
+
+        <div id="setp1">
+          <div style="display: inline-block">
+            <h3>Player1 : </h3>
+          </div>
+          <div style="display: inline-block">
+            <p class="score" id="p1SetScore"> 0 </p>
+          </div>
+        </div>
+
+        <div id="setp2">
+          <div style="display: inline-block">
+            <h3>Player2 : </h3>
+          </div>
+          <div style="display: inline-block">
+            <p class="score" id="p2SetScore"> 0 </p>
+          </div>
+        </div>
+      
+      </div>
+      
+      <div id="game">
+
+        <div id="gameDisplay">
+          <div style="display: inline-block">
+            <h3>Game: </h3>
+          </div>
+          <div style="display: inline-block">
+            <p class="number" id="gameNum"> 1 </p>
+          </div>
+        </div>
+
+        <div id="gamep1">
+          <div style="display: inline-block">
+            <h3>Player1 : </h3>
+          </div>
+          <div style="display: inline-block">
+            <p class="score" id="p1GameScore"> 0 </p>
+          </div>
+        </div>
+
+        <div id="gamep2">
+          <div style="display: inline-block">
+            <h3>Player2 : </h3>
+          </div>
+          <div style="display: inline-block">
+            <p class="score" id="p2GameScore"> 0 </p>
+          </div>
+        </div>
+
+      </div>
+      
+      <div id="point">
+
+        <div id="player1">
+          <h3>Player 1 score: </h3>
+          <p class="score" id="p1Points"> 0 </p>
+          <button id="myButton1">Player1 scored!</button>
+        </div>
+      
+        <div id="player2">
+          <h3>Player 2 score: </h3>
+          <p class="score" id="p2Points"> 0 </p>
+          <button id="myButton2">Player2 scored!</button>
+        </div>
+      
+      </div>
+
+    </div>
+
+    <div id = "result">
+
+      <div id="gameResult">
+        <h3>Winner of the previous game: </h3>
+        <p class="player" id="gameWinner"></p>
+      </div>
+
+
+      <div id="finalResult">
+        <h3>Final match winner: </h3>
+        <p class="player" id="finalWinner"></p>
+      </div>
+
+      <div id="resetGame">
+        <button id="resetBtn">Reset Game</button>
+      </div>
+    </div>
+
+    <!-- <div id = "rule">
+      < >
+    </div> -->
+
+
+
+  </body>
+
+  <script src="game.js"></script>
+</html>
