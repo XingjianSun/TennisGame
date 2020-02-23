@@ -8,9 +8,13 @@ let p1SetScore = 0;
 let p2SetScore = 0;
 let tieBreak = false;
 
+
 const p1ScoreButton = document.getElementById('myButton1');
 const p2ScoreButton = document.getElementById('myButton2');
 const resetButton = document.getElementById('resetBtn');
+resetButton.addEventListener('click', resetMatch);
+p1ScoreButton.addEventListener('click', addP1Point);
+p2ScoreButton.addEventListener('click', addP2Point);
 
 
 function addP1Point() {
@@ -231,10 +235,3 @@ function matchEnds(){
 }
 
 
-resetButton.addEventListener('click', resetMatch);
-
-
-p1ScoreButton.addEventListener('click', addP1Point);
-
-
-p2ScoreButton.addEventListener('click', addP2Point);
