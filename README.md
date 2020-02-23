@@ -1,5 +1,5 @@
 # TennisGame
-A simple tennis game simulator using node server
+A simple tennis game score keeper using node server
 
 # How to run: 
 1. install node.js, npm
